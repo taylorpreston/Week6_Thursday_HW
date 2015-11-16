@@ -63,12 +63,11 @@ var ListView = Backbone.View.extend({
     // for each model in the collection do this:
     console.log('list rendered')
 
+
     this.collection.forEach(function(item){
       var itemview = new ItemView({model: item})
       console.log(item)
       itemview.render()
-      $('#itemDisplay').html(itemview.el)
-      console.log())
 
     })
 
@@ -106,6 +105,8 @@ var Router = Backbone.Router.extend({
         $('.inputDisplay').html(inputview.el);
         listview.render(),
         $('.listDisplay').html(listview.el)
+        itemview.render()
+        $('.itemDisplay').html(itemview.el)
         }
       })
     }
