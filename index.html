@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <main>
+      <section class="inputDisplay">
+
+      </section>
+      <section class="listDisplay">
+
+      </section>
+
+    </main>
+
+
+
+    <script type="text/template" id="inputTemplate">
+      <h1>INPUT SECTION</h1>
+        <input type="text" name="name" value="" id="inputBox" placeholder="Thing I Gotta Do">
+        <input type="button" name="name" value="Do it!" id="inputSendBtn">
+    </script>
+
+    <script type="text/template" id="itemTemplate">
+        <input type="checkbox" name="name" value="Did It!" id="checkBox">
+        <div id="postText" ><%= post %></div> <p>BOOM</p>
+        <input type="button" name="name" value="Go Away" id="deleteBtn" data-id="<%= post._id %>">
+    </script>
+
+    <script type="text/template" id="listTemplate">
+      <h1>LIST SECTION</h1>
+      <section class="itemDisplay"></section>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js" ></script>
+    <script src="JS/main.js" charset="utf-8"></script>
+  </body>
+</html>
